@@ -1,0 +1,16 @@
+<div class="row justify-content-md-center">
+<div class="col-md-auto">
+
+<section class="produtos" *ngFor="let produto of getProdutos()">
+  <div class="produto">
+    <img src="{{produto.imagem}}" alt="{{produto.nome}}">
+    <p class="nomeProd">{{ produto.nome }}</p>
+    <p *ngIf="produto.desconto != 0" [ngClass]="{'precoDesconto': produto.desconto != 0}">De R$ {{ produto.preco }} por</p>
+    <p *ngIf="produto.desconto == 0" [ngClass]="{'precoNormal': produto.desconto == 0}">R$ {{ produto.preco }} à vista</p>
+    <!-- <p [ngClass]="{'precoDesconto': produto.desconto != 0, 'precoNormal': produto.desconto == 0}"  id="preco">R$ {{ produto.preco }}</p> -->
+    <p *ngIf="produto.desconto != 0"> R$ {{ produto.preco - produto.desconto }} à vista</p>
+  </div>
+</section>
+
+</div>
+</div>

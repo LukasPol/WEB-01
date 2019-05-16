@@ -1,0 +1,9 @@
+<form>
+  <input id='nome' name='nome' type='text' 
+    placeholder="Nome" #nome
+    (change)="alterarMensagem(nome.value)">
+</form>
+
+<div class="msg">
+  <p>{{ msg }}</p>
+</div>

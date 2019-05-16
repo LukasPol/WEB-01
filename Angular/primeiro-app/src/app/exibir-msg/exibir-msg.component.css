@@ -1,0 +1,9 @@
+form input{
+    text-align: center;
+    border:2px solid #ddd;
+    border-radius: 10px;
+}
+
+div.msg p{
+    color: #ff0000;    
+}

@@ -1,0 +1,18 @@
+<p>
+  {{ title }}
+</p>
+
+<form action="" #fadd="ngForm">
+	<div class="form-group">  
+		<input type="text" name="nome" id="nome" ngModel placeholder="Nome"><br>
+		<input type="email" name="email" id="email" ngModel placeholder="Email"><br>
+		<input type="tel" name="tel" id="tel" ngModel placeholder="Telefone"><br>
+		<input type="date" name="nasc" id="nasc" ngModel >
+	</div>
+	<input type="submit" value="Cadastrar" (click)="adicionar(fadd)">
+</form>
+
+
+<div>
+	{{ contatos[0].nome }}
+</div>

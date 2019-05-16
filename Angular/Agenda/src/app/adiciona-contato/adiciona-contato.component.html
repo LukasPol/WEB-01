@@ -1,0 +1,20 @@
+<p> {{ title }} </p>
+	 
+<img src="../assets/images/helloworld.gif" >
+
+<br>
+<br>
+
+<form action="" #fadd="ngForm">
+	<div class="form-group">  
+		<input type="text" name="nome" id="nome" placeholder="Nome" autocomplete="off" ngModel><br>
+		<input type="email" name="email" id="email"  placeholder="Email" autocomplete="off" ngModel ><br>
+		<input type="tel" name="tel" id="tel" placeholder="Telefone" autocomplete="off" ngModel><br>
+		<input type="date" name="nasc" id="nasc" ngModel >
+	</div>
+	<input type="submit" value="Cadastrar" (click)="adicionar(fadd)">
+</form>
+
+<div class="exibir">
+	<app-exibir-contato [contatos]="this.as.obterLista()"></app-exibir-contato>
+</div>

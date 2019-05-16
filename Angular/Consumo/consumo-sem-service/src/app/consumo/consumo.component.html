@@ -1,0 +1,14 @@
+<form >
+    <label>Distância (Km)</label>
+    <input type="number" name="distancia" placeholder="Distância" #distancia>
+
+    <label>Consumo (L)</label>
+    <input type="number" name="litros" placeholder="Consumo em litros" #litros>
+
+    <button (click)="calcular(distancia.value, litros.value, barra)">Calcular</button>
+
+
+</form>
+
+<div #barra class="barra-consumo aa">
+</div>

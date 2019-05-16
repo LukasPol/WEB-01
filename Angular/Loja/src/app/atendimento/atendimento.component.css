@@ -1,0 +1,16 @@
+div.atendimento{
+    margin-top: 2vw;
+    margin-bottom: 20px;
+}
+
+button{
+    float: right;
+}
+textarea{
+    font-size: 12pt;
+    transition: .4s
+}
+
+textarea:focus{
+    background-color: rgb(235, 235, 235);
+}

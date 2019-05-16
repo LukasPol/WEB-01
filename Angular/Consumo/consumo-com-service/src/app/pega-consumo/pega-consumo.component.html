@@ -1,0 +1,18 @@
+<h2>Calcular Consumo</h2>
+
+<form >
+	<label for="distancia">Distância:</label>
+	<input type="number" name="distancia" id="distancia" #distancia>
+	
+
+	<label for="litros">Litros:</label>
+	<input type="number" name="litros" id="litros" #litros>
+
+	<br>
+
+	<button type="button" class="btn" (click)="calcula(distancia.value, litros.value, resultado)">Calcular</button>
+</form>
+
+<div class="resultado" #resultado>
+
+</div>

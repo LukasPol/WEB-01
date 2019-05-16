@@ -1,0 +1,22 @@
+p{
+    color:blue;
+}
+input[type='text'], input[type='tel'],input[type='text'], input[type='email']{
+    border:none;
+    border-bottom: .1px solid red;
+    background-color: rgb(172, 235, 172);
+    color: #fff;
+    text-align: center;
+}
+
+input[type='date']{
+    border:none;
+    text-align: center;
+    background-color: rgb(172, 235, 172);
+    
+}
+
+.exibir{
+    text-align: center;
+    justify-content: center;
+}

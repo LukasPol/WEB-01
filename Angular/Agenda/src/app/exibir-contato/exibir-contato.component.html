@@ -1,0 +1,17 @@
+<div *ngIf="contatos != null && contatos.length > 0" id="list">
+  <p> {{ title }} </p>
+  <table>
+    <tr>
+      <th>Nome</th>
+      <th>Email</th>
+      <th>Telefone</th>
+      <th>Nascimento</th>
+    </tr>
+    <tr *ngFor="let c of this.as.obterLista()" >
+      <td>{{ c.nome }}</td>
+      <td>{{ c.email }}</td>
+      <td>{{ c.tel }}</td>
+      <td>{{ c.nasc }}</td>
+    </tr>
+</table>
+</div>

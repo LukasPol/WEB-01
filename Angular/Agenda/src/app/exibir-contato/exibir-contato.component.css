@@ -1,0 +1,13 @@
+
+table{
+    background-color: aqua;
+    /* position: absolute; */
+    /* width: 50%; */
+    margin: 0 auto;
+    /* display: inline-block; */
+}
+
+table td{
+    color:red;
+    
+}

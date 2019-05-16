@@ -1,0 +1,7 @@
+footer{
+    position: absolute;
+    top: 190px;
+    left:50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
