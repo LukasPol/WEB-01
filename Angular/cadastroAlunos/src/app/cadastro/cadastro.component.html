@@ -1,0 +1,22 @@
+<form #fm="ngForm">
+    <label for="mat">Matricula:</label>
+    <input type="number" name="matricula" id="mat" maxlength="10" [ngModel]="matricula" #mat="ngModel" required>
+    <br>
+    <label for="nome">Nome:</label>
+    <input type="text" name="nome" id="nome" #nom="ngModel" [ngModel]="nome" required>
+    <br>
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email" #em="ngModel" [ngModel]="email" email required>
+    <br>
+    <label for="senha">Senha:</label>
+    <input type="password" name="senha" id="senha" #se="ngModel" [ngModel]="senha" required>
+    <br>
+    <label for="confsenha">Confirma Senha:</label>
+    <input type="password" name="confsenha" id="confsenha" #cose="ngModel" [ngModel]="confsenha" required>
+    <!-- <div class="erro"> -->
+        <span class="senhaerro" #senhaerro>As senhas devem ser iguais</span>
+    <!-- </div> -->
+    <br>
+    <button type="submit" [disabled]="fm.form.invalid" (click)=cadastra(fm,senhaerro)>Cadastrar</button>
+
+</form>
