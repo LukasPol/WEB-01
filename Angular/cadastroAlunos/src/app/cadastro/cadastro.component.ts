@@ -16,6 +16,7 @@ export class CadastroComponent implements OnInit {
   verficiasenha(senha, confSenha, span) {
     if (senha !== confSenha) {
       span = 'block';
+      console.log(span)
       // span.value = "As senhas devem ser iguais";
     }
   }
@@ -23,6 +24,7 @@ export class CadastroComponent implements OnInit {
   cadastra(fm: FormGroup, span) {
     // console.log(span);
     console.log(fm.value.nome);
+    console.log(span);
     this.verficiasenha(fm.value.senha, fm.value.confsenha ,span);
   }
 }
