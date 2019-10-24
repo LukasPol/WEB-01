@@ -7,3 +7,36 @@
 .green{
     background-color:green;
 }
+
+button{
+    background-color: blue;
+    height: 30px;
+    width: 90px;
+    color: white;
+    border-radius: 10px 10px;
+    margin-bottom: 40px;
+}   
+button:hover{
+    background: rgb(45, 45, 175);
+}
+input{
+    width: 230px;
+    height: 30px;
+}
+
+.box{
+    background-color: rgb(83, 80, 80);
+    color: white;
+    width: 30%;
+    max-height: 450px;
+    margin-top: 2%;
+    margin-left: 35%;
+    border-radius: 10px 10px;
+}
+
+.resultado{
+    align-content: center;
+    height: 20px;
+    width: 150px;
+    border-radius: 10px 10px;
+}
