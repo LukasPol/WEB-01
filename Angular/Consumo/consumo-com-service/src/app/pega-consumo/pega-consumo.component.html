@@ -1,18 +1,24 @@
+<div  align="center" class="box">
+
+<br>
 <h2>Calcular Consumo</h2>
 
 <form >
-	<label for="distancia">Distância:</label>
+	<p>
+	<label for="distancia">Distância:</label><br>
 	<input type="number" name="distancia" id="distancia" #distancia>
-	
-
-	<label for="litros">Litros:</label>
+	</p>
+	<p>
+	<label for="litros">Litros:</label><br>
 	<input type="number" name="litros" id="litros" #litros>
+	</p>
 
 	<br>
-
+	<div class="resultado" #resultado></div> KM/L
+	<p>
 	<button type="button" class="btn" (click)="calcula(distancia.value, litros.value, resultado)">Calcular</button>
+	</p>
 </form>
 
-<div class="resultado" #resultado>
 
 </div>
